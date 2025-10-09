@@ -37,6 +37,4 @@ app.use("/api/order", orderRouter);
 app.listen(port, () => {
     console.log(`Server Started on http://localhost:${port}`);
 });
-
-
-// mongodb+srv://amitmauryafzd90:amit2003@cluster0.asv6tqk.mongodb.net/?
+ 

@@ -34,3 +34,9 @@
 .place-order .cart-total button{
     margin-top: 30px;
 }
+
+@media (max-width:600px){
+    .place-order{
+        display: inline-block;
+    }
+}
