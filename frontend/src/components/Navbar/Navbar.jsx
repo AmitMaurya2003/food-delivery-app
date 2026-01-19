@@ -15,6 +15,8 @@ const Navbar = ({setShowLogin}) => {
       localStorage.removeItem("token");
       setToken("");
       navigate("/");
+      // Safe auto-refresh (runs only on logout click)
+      window.location.reload();
     }
 
   return (
