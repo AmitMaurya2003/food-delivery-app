@@ -14,3 +14,47 @@
     gap: 30px;
     row-gap: 50px;
 }
+
+.loading {
+  min-height: 60vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* rotating circle */
+.spin {
+  width: 120px;
+  height: 120px;
+  border: 5px solid #bdbdbd;
+  border-top-color: tomato;
+  border-radius: 50%;
+  animation: rotate 1s linear infinite;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* text inside */
+.spin-text {
+  font-size: 12px;
+  font-weight: 600;
+  color: #555;
+  /*THIS cancels parent rotation */
+  animation: counterRotate 1s linear infinite;
+  transform-origin: center;
+}
+
+@keyframes rotate {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* opposite rotation */
+@keyframes counterRotate {
+  to {
+    transform: rotate(-360deg);
+  }
+}
