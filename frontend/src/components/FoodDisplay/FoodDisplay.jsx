@@ -4,7 +4,17 @@ import { StoreContext } from '../../context/StoreContext'
 import FoodItem from '../FoodItem/FoodItem';
 
 const FoodDisplay = ({category}) => {
-    const {food_list} = useContext(StoreContext);
+    const {food_list, loading} = useContext(StoreContext);
+
+    if (loading) {
+        return (
+          <div className='loading'>  
+          <div className="spin">
+            <span className="spin-text">Loading dishes...</span>
+          </div>  
+          </div>
+        )
+    } 
 
   return (
     <div className='food-display' id='food-display'>
