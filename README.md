@@ -1,4 +1,4 @@
-Food Delivery App (MERN Stack) – Built a full-stack food ordering platform with authentication, admin dashboard, and live deployment using Render.
+I am building a full-stack (MERN) food delivery app with user and admin panels, Stripe payments, and a complete order workflow. The project is actively under development with a focus on clean APIs, scalability, and React-based UI.
 
 Live Link :-  https://food-delivery-app-frontend-k64b.onrender.com
 
